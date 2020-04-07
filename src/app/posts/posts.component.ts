@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PostsComponent implements OnInit {
 
   @Input()
-  posts: PostsComponent;
+  posts: PostsModel;
 
   constructor() {
   }
