@@ -12,8 +12,8 @@ import {PostsService} from './services/posts.service';
   styles: [``],
 })
 export class AppComponent {
-  comments: CommentsModel[];
-  posts: PostsModel[];
+  comments: CommentsModel;
+  posts: PostsModel;
 
   constructor(private commentServiec: CommentService, private postsService: PostsService) {
     this.commentServiec.getComments().subscribe(value => {
